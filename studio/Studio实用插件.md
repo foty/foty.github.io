@@ -10,7 +10,7 @@
 * Translation：翻译插件。选择所需翻译的单词或者片段，右键弹出菜单选择`Translate`即可翻译。支持英译汉，汉译英。
 
 * ASM Bytecode Viewer Support Kotlin：查看字节码插件。在某个类中右键弹出菜单选择`ASM Bytecode Viewer`后开始转换。转换完成后，右边自动展开ASM Code
-  面板。也可以点击右边`ASMPlugin`主动展开面板。
+  面板。也可以点击右边`ASMPlugin`主动关闭(展开)面板。
 
 * LeetCode Editor：一个刷力扣题目的插件。安装后会在右边生成一个`leetcode`的小按钮，点击会展开leetcode面板，(第一次需要配置登录用户等信息)，之后就
   能在idea完成刷题，提交。
