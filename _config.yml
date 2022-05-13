@@ -8,20 +8,26 @@ plainwhite:
   name: 职业法师赵得柱
   tagline: hello world !
   date_format: "%b %-d, %Y"
-  search: true
-  dark_mode: true  #黑暗模式
-  portfolio_image: "assets/head.png" #头像
-  show_excerpts: true
-  sitemap: true
-  html_lang: "en"
-
-  condensed_mobile:
-    - home
-    - page
-    - post
 
   social_links:
     github: foty
+
+  search: true
+
+  dark_mode: true  #黑暗模式
+
+  portfolio_image: "assets/head.png" #头像
+
+  show_excerpts: true
+
+  sitemap: true
+
+  html_lang: "en"
+
+  condensed_mobile:
+    #- home
+    - page
+    - post
 
 #  navigation:
 #    - title: My Work
