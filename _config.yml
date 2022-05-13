@@ -5,15 +5,15 @@
 remote_theme: samarsault/plainwhite-jekyll
 
 plainwhite:
-  name: foty
+  name: 职业法师赵得柱
   tagline: hello world !
   date_format: "%b %-d, %Y"
-  sitemap: true
   search: true
-  dark_mode: true
-  portfolio_image: "assets/head.png"
-  html_lang: "en"
+  dark_mode: true  #黑暗模式
+  portfolio_image: "assets/head.png" #头像
   show_excerpts: true
+  sitemap: true
+  html_lang: "en"
 
   condensed_mobile:
     - home
