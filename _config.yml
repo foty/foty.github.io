@@ -12,9 +12,9 @@ plainwhite:
   social_links:
     github: foty
 
-  search: true
+  search: true  #搜索条
 
-  dark_mode: true  #黑暗模式
+  dark_mode: true  #夜间模式
 
   portfolio_image: "assets/head.png" #头像
 
