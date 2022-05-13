@@ -4,6 +4,13 @@
 # 使用github托管的其他主题
 remote_theme: samarsault/plainwhite-jekyll
 
+title: Your awesome title
+author: foty
+description: > # this means to ignore newlines until "show_exerpts:"
+  哈哈哈哈哈哈
+
+show_excerpts: true
+
 plainwhite:
   name: 职业法师赵得柱
   tagline: hello world !
@@ -18,7 +25,7 @@ plainwhite:
 
   portfolio_image: "assets/head.png" #头像
 
-  show_excerpts: true
+
 
   sitemap: true
 
