@@ -6,7 +6,7 @@ remote_theme: samarsault/plainwhite-jekyll
 
 plainwhite:
   name: foty
-  tagline: hello world
+  tagline: hello world !
   date_format: "%b %-d, %Y"
   sitemap: true
   search: true
@@ -17,7 +17,5 @@ plainwhite:
     - home
     - page
     - post
-
   social_links:
-    github: lxx
-    linkedIn:  # format: locale/us ername
+    github: https://github.com/
