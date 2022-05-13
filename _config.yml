@@ -14,12 +14,14 @@ plainwhite:
   portfolio_image: "assets/head.png"
   html_lang: "en"
   show_excerpts: true
+
   condensed_mobile:
     - home
     - page
     - post
   social_links:
-    github: https://github.com/
+    github: https://github.com/foty
+
   navigation:
     - title: My Work
       url: "/my-work"
