@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Welcome to GitHub Pages"
+description: ""
+category: articles
+tags: [demo]
+comments: true
+---
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/foty/foty.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.

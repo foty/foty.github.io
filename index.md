@@ -1,7 +1,5 @@
 ---
-layout: home
-title:  "Integrating razorpay into your webapp"
-date:   2022-03-23 21:03:36
+layout: default
 ---
 
 <br>
@@ -19,9 +17,9 @@ date:   2022-03-23 21:03:36
 - [Studio插件][Studio插件]
 
 
-[MarkDown]: /demo.md
-[收录的问题]: /问题收录.md
-[Studio插件]: /studio/Studio实用插件.md
+[MarkDown]: /_posts/demo.md
+[收录的问题]: /_posts/问题收录.md
+[Studio插件]: /_posts/Studio实用插件.md
 
 
 
