@@ -19,11 +19,12 @@ plainwhite:
     - home
     - page
     - post
-  social_links:
-    github: https://github.com/foty
 
-  navigation:
-    - title: My Work
-      url: "/my-work"
-    - title: Resume
-      url: "/resume"
+  social_links:
+    github: foty
+
+#  navigation:
+#    - title: My Work
+#      url: "/my-work"
+#    - title: Resume
+#      url: "/resume"
