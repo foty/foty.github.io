@@ -1,1 +1,5 @@
-theme: jekyll-theme-slate
+# 使用github支持的主题
+# theme: jekyll-theme-slate
+
+# 使用github托管的其他主题
+remote_theme: sfreytag/friday-theme
