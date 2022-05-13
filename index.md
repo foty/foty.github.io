@@ -1,9 +1,8 @@
 ---
 layout: default
+title: ""
 ---
 
-<br>
-<br>
 <br>
 <br>
 <br>
