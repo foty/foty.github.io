@@ -1,12 +1,9 @@
 ---
-layout: post
+layout: home
 title:  "Integrating razorpay into your webapp"
-date:   2019-03-23 21:03:36 +0530
+date:   2022-03-23 21:03:36
 ---
 
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>
@@ -22,9 +19,9 @@ date:   2019-03-23 21:03:36 +0530
 - [Studio插件][Studio插件]
 
 
-[MarkDown]: https://github.com/foty/foty.github.io/blob/master/demo.md
-[收录的问题]: https://github.com/foty/foty.github.io/blob/master/问题收录.md
-[Studio插件]: https://github.com/foty/foty.github.io/blob/master/studio/Studio实用插件.md
+[MarkDown]: /demo.md
+[收录的问题]: /问题收录.md
+[Studio插件]: /studio/Studio实用插件.md
 
 
 
