@@ -33,3 +33,9 @@ plainwhite:
 #      url: "/my-work"
 #    - title: Resume
 #      url: "/resume"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-sitemap
