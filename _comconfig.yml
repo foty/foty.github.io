@@ -1,0 +1,35 @@
+# 使用github支持的主题
+# theme: jekyll-theme-slate
+
+# 使用github托管的其他主题
+remote_theme: samarsault/plainwhite-jekyll
+
+title: hello world
+author: foty
+description: >
+  哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+  哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+  哈哈哈哈
+show_excerpts: true
+
+plainwhite:
+  name: 职业法师赵得柱
+  tagline: hello world !
+  date_format: "%b %-d, %Y"
+  search: true  #搜索条
+  dark_mode: true  #夜间模式
+  portfolio_image: "assets/head.png"  #头像
+  sitemap: true
+  html_lang: "en"
+  condensed_mobile:
+    - home
+    - page
+    - post
+  social_links:
+    github: foty
+
+#  navigation:
+#    - title: My Work
+#      url: "/my-work"
+#    - title: Resume
+#      url: "/resume"
