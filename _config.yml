@@ -17,7 +17,7 @@ plainwhite:
   search: true
   dark_mode: true
   portfolio_image: "assets/head.png"
-  html_lang: "en"
+  html_lang: "CN" # 中国
   condensed_mobile:
     #- home
     - page
