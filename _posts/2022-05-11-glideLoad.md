@@ -5,7 +5,7 @@ date: 2022-05-10 22:12:33 +0530
 category: articles
 tags: [problem]
 ---
-Glide(3.7)加载圆角图片，四角出现黑色区域问题。
+Glide(3.7)加载圆角图片，四角出现黑色区域问题
 
 解决方案：  
 使用.transform()手动转换解码，直接copy代码：
