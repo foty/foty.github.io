@@ -13,7 +13,7 @@ window.onload = function () {
         resultsContainer: $searchResults,
         json: '{{ "/search.json" | relative_url }}',
         searchResultTemplate: '<a href="{url}" target="_blank">{title}</a>',
-        noResultsText: ''
+        noResultsText: '未搜索到结果'
     });
 
     /* hack ios safari unfocus */
