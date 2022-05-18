@@ -1,11 +1,14 @@
 # 使用github支持的主题
 # theme: jekyll-theme-slate
 
+
+
 # 使用github托管的其他主题
 remote_theme: samarsault/plainwhite-jekyll
 
 title: hello world
 author: foty
+#email: your-email@domain.com
 description: >
   哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
   哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
