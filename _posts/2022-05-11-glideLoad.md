@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Glide加载圆角图片，四角出现黑色区域"
-date: 2022-05-10 22:12:33 +0800
-description: ""
+date: 2022-05-10 22:12:33 +0530
 category: articles
 tags: [problem]
 ---
