@@ -54,10 +54,3 @@ remote_theme: samarsault/plainwhite-jekyll
 plugins:
   - jekyll-seo-tag
 #  - jekyll-feed
-
-markdown: kramdown
-highlighter: rouge
-
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge

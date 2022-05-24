@@ -7,8 +7,57 @@
 div.highlight {
 	padding: 5px 20px;
 }
+// 代码块样式
 pre.highlight, code {
 	font-family: 'Consolas', Menlo, monospace;
 	line-height: 1.4em;
 	tab-size: 4;
+}
+// `代码块`
+code {
+  padding: .15em .15em;
+  font-size: 95%;
+  color: #bf616a;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+  line-height: 1.4;
+}
+// ```代码块```
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0rem;
+  padding: 1rem;
+  font-size: 100%;
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f9f9f9;
+}
+pre code {
+  padding: 0;
+  font-size: 100%;
+  color: inherit;
+  background-color: transparent;
+}
+
+// 引用块 >
+blockquote {
+  padding: .5rem 1rem;
+  margin: .5rem 0;
+  color: #7a7a7a;
+  background-color: #f4f4f4;
+  border-left: 1.0rem solid #e5e5e5;
+}
+blockquote p:last-child {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+@media (min-width: 30em) {
+  blockquote {
+    padding-right: 5rem;
+    padding-left: 1.25rem;
+  }
 }
