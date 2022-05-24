@@ -8,15 +8,6 @@ tags: [skill]
 正常使用keytool命令需要在keytool工具所在的文件目录下执行。也就是studio安装目录下的`jre\bin`目录下
 
 
-##### 查看某个.jks文件---
-layout: post
-title: "关于keytool工具使用命令"
-date: 2022-05-17 18:01:22 +0890
-category: articles
-tags: [skill]
----
-正常使用keytool命令需要在keytool工具所在的文件目录下执行。也就是studio安装目录下的`jre\bin\`目录下。
-
 
 ##### 查看某个.jks文件
 ```
