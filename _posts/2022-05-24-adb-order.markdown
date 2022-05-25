@@ -18,6 +18,16 @@ ADB常用命令
 
 <br>
 
+**启动adb服务**
+```text
+adb start-server
+```
+
+**结束adb服务**
+```text
+adb kill-server
+```
+
 **局域网无线连接设备**
 ```text
 adb connect [id地址] (:端口号)
@@ -124,4 +134,19 @@ Ctrl + c
 **清空控制台**
 ```text
 cls
+```
+
+---
+
+进入shell模式(linux环境)
+```text
+adb shell
+```
+进入shell模式后可以使用很多`dumpsys`命令。
+
+#### dumpsys命令
+
+**查看设备运行中的activity**
+```text
+dumpsys activity | grep "Run"
 ```
