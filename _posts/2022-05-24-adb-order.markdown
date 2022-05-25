@@ -98,7 +98,7 @@ adb logcat (options) (filter-specs) (> [本地文件路径])
 上面这种命令用法执行`adb logcat --help`就能看到。其中options为可选参数，filter-specs 表示为过滤器参数。其中options常用的有：
 
 * -s：表示过滤器为默认，即指定过滤器参数为`*:s`
-* -f：接<_filename_>参数，记录到文件。默认为标准输出。如`adb logcat -f /sdcard/test.txt`
+* -f：接 <_filename_> 参数，记录到文件。默认为标准输出。如`adb logcat -f /sdcard/test.txt`
 * -n：接<_count_>参数，将最大轮换日志数设置为 <count>，默认为 4。如`adb logcat -n 20`
 * -v：接<_format_>参数，格式化输出。<_format_> 可选有(brief、process、tag、thread、raw、time、threadtime、long)。如 `adb logcat -v time`
 * -c：清除之前日志信息
@@ -111,8 +111,9 @@ adb logcat (options) (filter-specs) (> [本地文件路径])
 * [本地文件路径]：保存日志到指定路径下的文件。如`adb logcat -v time > D:\log.txt`(根据时间输出，保存到D:\log.txt)
 
 filter-specs的语法格式为：
-> (tag):[优先级]  
-
+```text
+(tag):[优先级]
+```
 filter-specs也对应着log输出代码`Log.e("tag", "内容");`。  
 优先级参数：
 
@@ -129,22 +130,24 @@ filter-specs也对应着log输出代码`Log.e("tag", "内容");`。
 ```text
 Ctrl + c
 ```
-比如在使用`adb logcat`时，终端会一直同步设备的logcat输出。当不想看logcat或者想执行其他命令时可执行`Ctrl c`终止前一个命令。
+比如在使用`adb logcat`时，终端会一直同步设备的logcat输出。当不想看logcat或者想执行其他命令时可执行`Ctrl c`终止当前运行中命令。
 
 **清空控制台**
 ```text
 cls
 ```
+<br>
 
 ---
 
-进入shell模式(linux环境)
+**进入shell模式(linux环境)**
 ```text
 adb shell
 ```
 进入shell模式后可以使用很多`dumpsys`命令。
 
-#### dumpsys命令
+
+#### #dumpsys命令
 
 **查看设备运行中的activity**
 ```text

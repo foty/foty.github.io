@@ -9,7 +9,7 @@ tags: [skill]
 
 
 
-##### 查看某个.jks文件
+### 查看某个.jks文件
 ```
 keytool -list -v -keystore [1] -storepass [2]
 ```
@@ -17,14 +17,14 @@ keytool -list -v -keystore [1] -storepass [2]
 [2] 输入ks的密码。
 
 
-##### 删除jks文件
+### 删除jks文件
 ```
 keytool -delete -alias [1] -keystore [2]
 ```
 [1]：输入删除jks文件的别名，也就是`alias`属性；  
 [2]：输入删除jks文件的名称。如：`jk.jks`
 
-##### 创建jks文件
+### 创建jks文件
 ```
 keytool -genkey -v -keystore [1] -alias [2]  -storepass [3] -keypass [4] -keyalg RSA -validity [5]
 ```
@@ -34,7 +34,7 @@ keytool -genkey -v -keystore [1] -alias [2]  -storepass [3] -keypass [4] -keyalg
 * [4] 输入key的密码
 * [5] 输入有效期,单位为[天]
 
-##### 转换PKCS12
+### 转换PKCS12
 ```
 keytool -importkeystore -srckeystore [1] -destkeystore [2] -deststoretype pkcs12
 ```
@@ -48,14 +48,14 @@ keytool -list -v -keystore [1] -storepass [2]
 [2] 输入ks的密码。
 
 
-#### 删除jks文件
+### 删除jks文件
 ```
 keytool -delete -alias [1] -keystore [2]
 ```
 [1]：输入删除jks文件的别名，也就是`alias`属性；  
 [2]：输入删除jks文件的名称。如：`jk.jks`
 
-#### 创建jks文件
+### 创建jks文件
 ```
 keytool -genkey -v -keystore [1] -alias [2]  -storepass [3] -keypass [4] -keyalg RSA -validity [5]
 ```
@@ -65,7 +65,7 @@ keytool -genkey -v -keystore [1] -alias [2]  -storepass [3] -keypass [4] -keyalg
 * [4] 输入key的密码
 * [5] 输入有效期,单位为[天]
 
-#### 转换PKCS12
+### 转换PKCS12
 ```
 keytool -importkeystore -srckeystore [1] -destkeystore [2] -deststoretype pkcs12
 ```
