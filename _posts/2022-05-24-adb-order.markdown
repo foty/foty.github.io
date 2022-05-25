@@ -5,14 +5,16 @@ date:   2022-05-24 09:13:36 +0800
 categories: articles
 tags: [skill]
 ---
-adb常用命令
+ADB常用命令
 
 
 - [...]：表示必需输入参数
 - (...)：表示可选输入参数
-- (-abcdef...)：有2种意思，一种是 `-` + `一串英文字母`表示为`-其中一个英文字符`组成的可选参数列表，后面的一串英文字
-符是可与`-`组合的选项列表；另一种是`-`+`一个英文单词`表示一个参数，后面的所有英文单词是一个整体。
+- (-abcdef...)：有2种类型，一种是 `-` + `其中一个英文字母`组合表示为一个参数，后面的一串英文字符是和`-`组合的选项列表；另一种
+是`-`+`整个英文字符`表示成一个参数，后面的所有英文单词是一个整体。
+- (--sync)：同样表示为一个参数，只是该参数由`--`引导。使用`-`引导短参数，如-a，使用`--`引导长参数，如--opts。
 
+<br>
 <br>
 
 **局域网无线连接设备**
@@ -21,7 +23,6 @@ adb connect [id地址] (:端口号)
 ```
 如： adb connect 111.111.1.111:8080
 
-<br>
 
 **查看已连接的设备**
 ```text
@@ -29,37 +30,97 @@ adb devices (-l)
 ```
 -l：表示长输出(详细信息，比如设备型号)
 
-<br>
+
+**断开某个设备连接**
+```text
+adb disconnect (ip:端口)
+```
+如果没有指定ip，则表示断开所有连接
+
+---
 
 **adb安装APK**
 ```text
-adb install (-lrtsdg) [完整apk路径]
+adb install (-lrtsdg) (--instant) [完整apk路径]
 ```
 可选参数列表
-- -l
-- -r
-- -t
-- -s
-- -d
-- -g
+- -l：前向锁定应用(没用过)
+- -r：替换现有应用(覆盖安装)
+- -t：运行测试包(比如build产生的debug包)
+- -s：在sdcard上安装应用程序
+- -d：允许版本降级
+- -g：授予所有运行时权限
+- --instant：作为临时安装应用程序安装
 
-<br>
 
-**复制文件到目标设备**
+**卸载APK**
+```text
+adb (-k) uninstall [包名]
+```
+- -k：保留应用的数据(data/data的目录)与缓存(/sdcard/Android/包名的目录)
+
+---
+
+**从本地复制文件到目标设备**
 ```text
 push (--sync) (-z ALGORITHM) (-Z) [本地文件...] [远程(目标)设备目录]
 ```
+- --sync：表示仅推送主机上比设备新的文件
+- -z：使用指定算法压缩(ALGORITHM可选有 any/none/brotli/lz4/zstd)
+- -Z：禁止压缩
 
-<br>
 
 **从目标设备复制文件到本地**
 ```text
  pull (-a) (-z ALGORITHM) (-Z) [设备文件...] [本地目录]
 ```
+- -a：保留文件时间戳和模式
+- -z：使用指定算法压缩(ALGORITHM可选有 any/none/brotli/lz4/zstd)
+- -Z：禁止压缩
 
-<br>
+---
 
-> 块引用 
+**查看日志logcat**
+```text
+adb logcat (options) (filter-specs) (> [本地文件路径])
+```
+上面这种命令用法执行`adb logcat --help`就能看到。其中options为可选参数，filter-specs 表示为过滤器参数。其中options常用的有：
+
+* -s：表示过滤器为默认，即指定过滤器参数为`*:s`
+* -f：接<_filename_>参数，记录到文件。默认为标准输出。如`adb logcat -f /sdcard/test.txt`
+* -n：接<_count_>参数，将最大轮换日志数设置为 <count>，默认为 4。如`adb logcat -n 20`
+* -v：接<_format_>参数，格式化输出。<_format_> 可选有(brief、process、tag、thread、raw、time、threadtime、long)。如 `adb logcat -v time`
+* -c：清除之前日志信息
+* -d：转储日志然后退出(不阻塞)
+* -t：接<_count_>参数。只打印最近的 <_count_> 行(隐含 -d)
+* -t：接<_time_>参数，打印自指定时间以来最近的行(隐含 -d)。时间格式为 "%m-%d %H:%M:%S.%3q"
+* -T：接<_count_>，只打印最近的 <_count_> 行(不暗示 -d)
+* -T：接<_time_>打印自指定时间以来最近的行(不暗示 -d)，时间是格式为 "MM-DD hh:mm:ss.mmm"
+* -S：输出统计信息。
+* [本地文件路径]：保存日志到指定路径下的文件。如`adb logcat -v time > D:\log.txt`(根据时间输出，保存到D:\log.txt)
+
+filter-specs的语法格式为：
+> (tag):[优先级]  
+
+filter-specs也对应着log输出代码`Log.e("tag", "内容");`。  
+优先级参数：
+
+- V：verbose
+- D：debug
+- I：info
+- W：warning
+- E：error
+- F：
+- S：级别最高，其实啥日志也不输出
 
 
- `代码块`
+**终止当前命令执行**
+```text
+Ctrl + c
+```
+比如在使用`adb logcat`时，终端会一直同步设备的logcat输出。当不想看logcat或者想执行其他命令时可执行`Ctrl c`终止前一个命令。
+
+**清空控制台**
+```text
+cls
+```
