@@ -153,3 +153,8 @@ adb shell
 ```text
 dumpsys activity | grep "Run"
 ```
+
+**退出shell模式**
+```text
+exit
+```
