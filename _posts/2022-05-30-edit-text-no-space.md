@@ -1,11 +1,12 @@
 ---
 layout: post
 title:  "EditTxt禁止输入空格方法"
-date:   2022-05-30 11:54:30 +0800
+date: 2022-05-30 11:54:30 +0801
 categories: articles
 tags: [problem]
 ---
 ...
+
 
 ### 第一种方式：直接修改监听器逻辑，不允许输入空格：
 ```text
