@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "bitmap、drawable的转换"
-date:   2022-05-30 11:16:36 +0800
+title:  "Bitmap、Drawable的转换"
+date:   2022-05-30 11:31:26 +0800
 categories: articles
 tags: [problem]
 ---
