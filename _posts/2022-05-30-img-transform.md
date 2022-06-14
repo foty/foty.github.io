@@ -3,7 +3,7 @@ layout: post
 title:  "Bitmap、Drawable的转换"
 date:   2022-05-30 11:31:26 +0800
 categories: articles
-tags: [problem]
+tags: [skill]
 ---
 图片资源类型相互转换记录
 

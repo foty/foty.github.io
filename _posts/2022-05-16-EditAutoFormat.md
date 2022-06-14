@@ -4,7 +4,7 @@ title: "EditTextView英文字母输入自动大写"
 date: 2022-05-16 22:32:33 +0800
 description: ""
 category: articles
-tags: [skills]
+tags: [skill]
 ---
 ...
 

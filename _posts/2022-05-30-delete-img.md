@@ -3,7 +3,7 @@ layout: post
 title:  "删除设备中的文件，并通知媒体库更新"
 date:   2022-05-30 15:21:28 +0801
 categories: articles
-tags: [problem]
+tags: [skill]
 ---
 删除设备中图片文件，通知媒体库(相册)更新
 
