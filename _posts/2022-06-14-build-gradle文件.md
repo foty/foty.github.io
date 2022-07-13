@@ -12,8 +12,9 @@ build.gradle等配置文件随AS升级更新的变化
 #### 1、buildSrc -> includeBuild
 
 
-#### 2、groovy(build.gradle) -> kts(.gradle.kts)
-<https://blog.csdn.net/qq_20613731/article/details/119766219>
+#### 2、groovy(build.gradle) -> kts(.gradle.kts) .gradle迁移.gradle.kts
+<https://blog.csdn.net/qq_20613731/article/details/119766219>  
+<https://blog.csdn.net/github_34790294/article/details/122506907>
 
 
 #### 3、apt -> kapt -> ksp
