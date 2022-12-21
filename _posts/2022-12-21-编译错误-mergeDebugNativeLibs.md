@@ -45,9 +45,13 @@ pickFirst 意思是只选择第一个匹配文件。注意如果把pickFirst后�
 总结下packagingOptions的用法：  
 
 - exclude：过滤掉所设置的文件，不参与打包，不添加到apk中。   
+
 - pickFirst：匹配到多个相同文件，只选择第一个。    
+
 - doNotStrip：设置文件不被优化压缩。  
+
 - merge：匹配到多个同名文件时，合并文件，和pickFirst相反。
+
 
 另外如果没有起作用，检查是否有获取到所有libs、aar等文件：   
 
