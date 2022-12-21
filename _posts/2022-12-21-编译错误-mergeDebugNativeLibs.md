@@ -20,7 +20,8 @@ https://developer.android.com/r/tools/jniLibs-vs-imported-targets
 从上面报错信息中可以知道2个地方都有`lib/arm64-v8a/libc++_shared.so`的so库。那么就可以得出这个问题大概就是so库重复了。解决办法就是将其中一个依赖库移除，
 或者过滤掉其中的so库。移除依赖库显然不可取的，所以只有尝试过滤的操作了。
 <p>
-解决方法：使用`packagingOptions`。在主module下(app)的build.gradle文件中添加packagingOptions设置(打包配置项)。
+解决方法：   
+使用`packagingOptions`。在主module下(app)的build.gradle文件中添加packagingOptions设置(打包配置项)。  
 
 ```groovy
 android {
@@ -30,12 +31,15 @@ android {
     }
 }
 ```
+
 pickFirst 意思是只选择第一个匹配文件。注意如果把pickFirst后面的内容替换`jni\arm64-v8a\libc++_shared.so`将不会生效。具体原因未探明。暂且记下通
-用格式为:
+用格式为:   
 > lib/*/ + 文件资源
+
 
 <p>
 总结下packagingOptions的用法：
+
 
 * exclude：过滤掉所设置的文件，不参与打包，不添加到apk中。
 * pickFirst：匹配到多个相同文件，只选择第一个。
