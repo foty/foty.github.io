@@ -10,7 +10,7 @@ tags: [skill]
 <br>
 先看编译报错信息：
 
-```java
+```text
 2 files found with path 'lib/arm64-v8a/libc++_shared.so' from inputs:
  - C:\Users\manyc\.gradle\caches\transforms-3\eced9061ef9489eab1b72bfb1c1b4bce\transformed\jetified-mmkv-1.2.7\jni\arm64-v8a\libc++_shared.so
  - C:\Users\manyc\.gradle\caches\transforms-3\05f3892a1b17b6e5b2c0257584c3d346\transformed\jetified-???????-1.8.0\jni\arm64-v8a\libc++_shared.so
@@ -39,17 +39,16 @@ pickFirst 意思是只选择第一个匹配文件。注意如果把pickFirst后�
 
 
 <p>
-总结下packagingOptions的用法：
+总结下packagingOptions的用法：   
+
+* exclude：过滤掉所设置的文件，不参与打包，不添加到apk中。   
+* pickFirst：匹配到多个相同文件，只选择第一个。    
+* doNotStrip：设置文件不被优化压缩。  
+* merge：匹配到多个同名文件时，合并文件，和pickFirst相反。   
 
 
-* exclude：过滤掉所设置的文件，不参与打包，不添加到apk中。
-* pickFirst：匹配到多个相同文件，只选择第一个。
-* doNotStrip：设置文件不被优化压缩。
-* merge：匹配到多个同名文件时，合并文件，和pickFirst相反。
-
-
-另外如果没有起作用，检查是否有获取到所有libs、aar等文件：
-```groovy
+另外如果没有起作用，检查是否有获取到所有libs、aar等文件：   
+```text
 implementation fileTree(dir: "libs", include: ["*.jar", "*.aar"])
 ```
 
