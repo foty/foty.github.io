@@ -158,3 +158,13 @@ dumpsys activity | grep "Run"
 ```text
 exit
 ```
+
+**查看设备分辨率**
+```text
+adb shell wm size
+```
+
+**查看屏幕密度(dpi)**
+```text
+adb shell wm density
+```
